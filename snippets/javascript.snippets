@@ -11,10 +11,14 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {${2}};
+	function(${1}) {
+		${2}
+	};
 # if
 snippet if
-	if (${1:true}) {${2}}
+	if (${1:true}) {
+		${2}
+	}
 # if ... else
 snippet ife
 	if (${1:true}) {${2}}
@@ -67,10 +71,7 @@ snippet :f
 snippet timeout
 	setTimeout(function() {${3}}${2}, ${1:10};
 # Get Elements
-snippet get
-	getElementsBy${1:TagName}('${2}')${3}
-# Get Element
-snippet gett
-	getElementBy${1:Id}('${2}')${3}
 snippet id
 	$('#${1}')${2};${3}
+snippet cls
+	$('.${1}')${2};${3}
