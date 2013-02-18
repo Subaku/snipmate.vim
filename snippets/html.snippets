@@ -188,3 +188,23 @@ snippet table
 	</table>${4}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet com
+	<!-- ${1} -->${2}
+snippet dcom
+	{% comment %}
+		${1}
+	{% endcomment %}${2}
+snippet if
+	{% if ${1} %}
+		${2}	
+	{% endif %}
+snippet ife
+	{% if ${1} %}
+		${2}	
+	{% else %}
+		${3}
+	{% endif %}
+snippet for
+	{% for ${1} in ${2} %}
+		${3}	
+	{% endfor %}
