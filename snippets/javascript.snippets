@@ -21,8 +21,12 @@ snippet if
 	}
 # if ... else
 snippet ife
-	if (${1:true}) {${2}}
-	else{${3}}
+	if (${1:true}) {
+		${2}
+	}
+	else {
+		${3}
+	}
 # tertiary conditional
 snippet t
 	${1:/* condition */} ? ${2:a} : ${3:b}
@@ -75,3 +79,31 @@ snippet id
 	$('#${1}')${2};${3}
 snippet cls
 	$('.${1}')${2};${3}
+# Logs
+snippet log
+	console.log(${1});${2}
+snippet logg
+	console.log('${1}');${2}
+# Comments
+snippet com
+	/** ${1} */
+snippet comp
+	/** ${1}
+	 *
+	 * Keyword Args
+	 *    ${2: param} - ${3}
+	 */
+snippet comr
+	/** ${1}
+	 *
+	 * Return: ${2}
+	 */
+snippet coma
+	/** ${1}
+	 *
+	 * Keyword Args
+	 *    ${2: param} - ${3}
+	 *
+	 * Return: ${4}
+	 */
+
